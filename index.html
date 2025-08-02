@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    h1 {
+      color: #007bff;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Simple HTML Project</h1>
+  <p>Click the button to see a message:</p>
+  <button onclick="showMessage()">Click Me</button>
+
+  <p id="message"></p>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent = "Hello, world!";
+    }
+  </script>
+</body>
+</html>
